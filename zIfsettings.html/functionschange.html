@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body onload="noe('onload')">
+    <p>Ferdighet 2a - Alternative eventhandlere: onchange osv.</p>
+    <input type="text" onchange="noe('onchange')" oninput="noe('oninput')" />
+    <h3 onmouseover="noe('onmouseover')" onmouseout="noe('onmouseout')">Test test test</h3>
+    <h2 id="info"></h2>
+
+    <a href="https://www.w3schools.com/jsref/dom_obj_event.asp">Mer informasjon her</a>
+    <script>
+        function noe(alt){
+            document.getElementById('info').innerHTML += `<li>${alt}</li>`;
+
+        }
+
+
+    </script>
+</body>
+</html>
